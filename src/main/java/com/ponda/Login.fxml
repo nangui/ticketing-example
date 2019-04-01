@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="520.0" prefWidth="780.0" style="-fx-background-color: #fff;" stylesheets="@bootstrap3.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="com.ponda.LoginController">
+   <children>
+      <Pane prefHeight="520.0" prefWidth="390.0" style="-fx-background-color: #fafafa; -fx-border-color: #80d8ff; -fx-border-width: 5px;">
+         <children>
+            <ImageView fitHeight="218.0" fitWidth="340.0" layoutX="25.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/javadev/jee/Ticketing/src/main/resources/images/invoices.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="77.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M1 GL BILLETERIE">
+               <font>
+                  <Font name="Harrington" size="28.0" />
+               </font>
+            </Text>
+            <Text layoutX="54.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate" wrappingWidth="282.13671875" />
+         </children>
+      </Pane>
+      <Pane layoutX="390.0" prefHeight="520.0" prefWidth="390.0" style="-fx-background-color: #80d8ff;">
+         <children>
+            <Pane layoutX="43.0" layoutY="98.0" prefHeight="325.0" prefWidth="305.0" style="-fx-background-color: #bbdefb; -fx-background-radius: 10px;">
+               <children>
+                  <TextField fx:id="text_login" layoutX="29.0" layoutY="90.0" prefHeight="42.0" prefWidth="247.0" promptText="Entrer le login" style="-fx-background-color: #fff;" />
+                  <PasswordField fx:id="text_password" layoutX="28.0" layoutY="148.0" prefHeight="39.0" prefWidth="247.0" promptText="Entrer le mot de passe" />
+                  <Button fx:id="btnLogin" layoutX="101.0" layoutY="210.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="102.0" styleClass="success" text="Se connecter" />
+                  <Text fx:id="create_an_account" layoutX="115.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Créer un compte" textAlignment="CENTER" underline="true">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Authentification" textAlignment="CENTER">
+                     <font>
+                        <Font name="Harrington" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button fx:id="btnClose" layoutX="356.0" layoutY="4.0" mnemonicParsing="false" onAction="#btnClose_onClick" styleClass="danger" text="X" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
